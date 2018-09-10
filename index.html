@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SidePop</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+  <body>
+
+    <nav id="leftSidebar">
+   <ul>
+     <li><a href="#1">First Panel</a></li>
+     <li><a href="#2">Second Panel</a></li>
+     <li><a href="#3">Third Panel</a></li>
+     <li><a href="#4">Fourth Panel</a></li>
+     <li><a href="#5">Fifth Panel</a></li>
+     <li><a href="#6">Sixth Panel</a></li>
+   </ul>
+ </nav>
+
+ <!--multiple full-screen panels that scroll up and down-->
+ <!--note: using a-name elements so the links still work with js disabled-->
+ <div id="mainStack">
+   <div id="panel1" class="panel">
+     <a name="1"></a>
+     First panel
+   </div>
+   <div id="panel2" class="panel">
+     <a name="2"></a>
+     Second panel
+   </div>
+   <div id="panel3" class="panel">
+     <a name="3"></a>
+     Third panel
+   </div>
+   <div id="panel4" class="panel">
+     <a name="4"></a>
+     Fourth panel
+   </div>
+   <div id="panel5" class="panel">
+     <a name="5"></a>
+     Fifth panel
+   </div>
+   <div id="panel6" class="panel">
+     <a name="6"></a>
+     Sixth panel
+   </div>
+ </div>
+
+ <div id="sidePanelButton">
+   Open Side Panel
+ </div>
+
+
+ <div id="sidePanel" class="">
+   Side panel
+   <div id="sidePanelClose">Click This Text to Close</div>
+ </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font: normal 16px/1.2 sans-serif;
+}
+#leftSidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  min-width: 250px;
+  border-right: 1px solid #000;
+  background-color: rgba(255,255,255,0.25);
+}
+#leftSidebar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#leftSidebar > ul > li {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #999;
+}
+#panel1, #panel2, #panel3, #panel4, #panel5, #panel6 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 50px;
+}
+#panel1, #panel3, #panel5 {
+  /* for demo only: */
+  background-color: green;
+}
+#panel2, #panel4, #panel6 {
+
+  background-color: skyblue;
+}
+#sidePanelButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+	height:100%;
+  cursor: pointer;
+  padding: 40px;
+  border: 1px solid #000;
+  background-color: lime;
+}
+#sidePanel {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 0;
+  left: 100%;
+  transition: left 0.4s;
+  -webkit-transition: left 0.4s;
+  z-index: 1;
+  background-color: navy;
+  text-align: center;
+  font-size: 50px;
+}
+#sidePanel.open {
+  left: 0;
+}
